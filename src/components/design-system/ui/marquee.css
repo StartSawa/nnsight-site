@@ -1,0 +1,70 @@
+/* The loop lives in CSS: keyframes, masks and reduced motion. A sidecar, never an inline <style>, which a section rule can render as page text. */
+@keyframes ploy-marquee-x {
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+@keyframes ploy-marquee-y {
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
+[data-ploy-component="marquee"] > [data-marquee-group] {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: space-around;
+  gap: var(--gap);
+  min-width: 100%;
+  animation: ploy-marquee-x var(--duration) linear infinite;
+}
+[data-marquee-group] > * {
+  flex-shrink: 0;
+}
+[data-ploy-component="marquee"][data-vertical="true"] > [data-marquee-group] {
+  flex-direction: column;
+  min-width: 0;
+  min-height: 100%;
+  animation-name: ploy-marquee-y;
+}
+[data-ploy-component="marquee"][data-reverse="true"] > [data-marquee-group] {
+  animation-direction: reverse;
+}
+[data-ploy-component="marquee"][data-paused="true"] > [data-marquee-group],
+[data-ploy-component="marquee"][data-pause-on-hover="true"]:hover
+  > [data-marquee-group],
+[data-ploy-component="marquee"]:focus-within > [data-marquee-group] {
+  animation-play-state: paused;
+}
+[data-ploy-component="marquee"][data-fade="true"] {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 min(var(--fade), 50%),
+    #000 calc(100% - min(var(--fade), 50%)),
+    transparent
+  );
+}
+[data-ploy-component="marquee"][data-fade="true"][data-vertical="true"] {
+  mask-image: linear-gradient(
+    to bottom,
+    transparent,
+    #000 min(var(--fade), 50%),
+    #000 calc(100% - min(var(--fade), 50%)),
+    transparent
+  );
+}
+/* KRBY256 reduced-motion-marquee-plays-on-request: keep the animated layout at rest; hover, press or focus plays it. */
+@media (prefers-reduced-motion: reduce) {
+  [data-ploy-component="marquee"] > [data-marquee-group] {
+    animation-play-state: paused;
+  }
+  [data-ploy-component="marquee"]:not([data-paused="true"]):is(
+      :hover,
+      :active,
+      :focus-within
+    )
+    > [data-marquee-group] {
+    animation-play-state: running;
+  }
+}

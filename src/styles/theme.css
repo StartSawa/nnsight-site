@@ -1,0 +1,646 @@
+/* ploy-theme: 0755d345-f102-4463-aba4-5aee243895cc:995799d6dad5278bdf1fccf663a3fb10e0e393d85cf7a5261ba1390f2fc7fa20 */
+/* Captured source mode: light; the dark block below is hand-tuned. */
+/* ploy-theme-start */
+:root:root {
+  --background: var(--ploy-background-primary);
+  --foreground: var(--ploy-text-primary);
+  --card: var(--ploy-background-secondary);
+  --card-foreground: var(--ploy-text-primary);
+  --popover: var(--ploy-background-primary);
+  --popover-foreground: var(--ploy-text-primary);
+  --primary: var(--ploy-accent-primary);
+  --primary-foreground: var(--ploy-text-on-accent-primary);
+  --secondary: var(--ploy-background-secondary);
+  --secondary-foreground: var(--ploy-text-primary);
+  --muted: var(--ploy-background-secondary);
+  --muted-foreground: var(--ploy-text-secondary);
+  --accent: var(--ploy-accent-secondary);
+  --accent-foreground: var(--ploy-text-on-accent-secondary);
+  --input: var(--ploy-input-border);
+  --border: var(--ploy-border-primary);
+  --ring: var(--ploy-accent-primary);
+  --sidebar: var(--ploy-background-secondary);
+  --sidebar-foreground: var(--ploy-text-primary);
+  --sidebar-primary: var(--ploy-accent-primary);
+  --sidebar-primary-foreground: var(--ploy-text-on-accent-primary);
+  --sidebar-accent: var(--ploy-background-secondary);
+  --sidebar-accent-foreground: var(--ploy-text-primary);
+  --sidebar-border: var(--ploy-border-primary);
+  --sidebar-ring: var(--ploy-accent-primary);
+  --radius: 4px;
+  --radius-button: 4px;
+  --radius-card: 4px;
+  --radius-input: 4px;
+  --font-heading: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-body: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "Geist Mono", "JetBrains Mono", ui-monospace, monospace;
+  --font-eyebrow: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-button: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-heading-weight: 600;
+  --font-heading-bold-weight: 700;
+  --font-heading-letter-spacing: -0.035em;
+  --font-heading-line-height: 1.05;
+  --font-body-weight: 400;
+  --font-body-bold-weight: 600;
+  --font-body-letter-spacing: normal;
+  --font-body-line-height: 1.6;
+  --font-button-weight: 500;
+  --font-button-letter-spacing: normal;
+  --font-button-line-height: 1;
+  --ploy-shadow-color: var(--ploy-border-primary);
+  --border-width: 1px;
+  --border-style: solid;
+  --ploy-neutral-primary: #ffffff;
+  --ploy-neutral-secondary: #f5f5f8;
+  --ploy-neutral-inverse: #0e0e14;
+  --ploy-neutral-light: #ffffff;
+  --ploy-neutral-dark: #0e0e14;
+  --ploy-neutral-primary-s0: #ffffff;
+  --ploy-neutral-primary-s1: #ffffff;
+  --ploy-neutral-primary-s2: #f5f5f8;
+  --ploy-neutral-primary-s3: #eeeef3;
+  --ploy-neutral-primary-s4: #e4e4eb;
+  --ploy-neutral-primary-s5: #d6d6df;
+  --ploy-neutral-inverse-s0: #08080c;
+  --ploy-neutral-inverse-s1: #0e0e14;
+  --ploy-neutral-inverse-s2: #16161e;
+  --ploy-neutral-inverse-s3: #1e1e28;
+  --ploy-neutral-inverse-s4: #2a2a36;
+  --ploy-neutral-inverse-s5: #3a3a48;
+  --ploy-accent-primary: #a134eb;
+  --ploy-accent-secondary: #4385be;
+  --ploy-accent-tertiary: #4385be;
+  --ploy-text-primary: #121218;
+  --ploy-text-secondary: #5c5c6a;
+  --ploy-text-inverse: #f4f4f8;
+  --ploy-text-inverse-secondary: rgb(244 244 248 / 64%);
+  --ploy-text-on-accent-primary: #ffffff;
+  --ploy-text-on-accent-secondary: #ffffff;
+  --ploy-text-on-accent-tertiary: #ffffff;
+  --ploy-button-primary-background: #a134eb;
+  --ploy-button-primary-text: #ffffff;
+  --ploy-button-primary-border: #a134eb;
+  --ploy-button-secondary-background: #ffffff;
+  --ploy-button-secondary-text: #121218;
+  --ploy-button-secondary-border: #d6d6df;
+  --ploy-background-primary: var(--ploy-neutral-primary-s1);
+  --ploy-background-secondary: var(--ploy-neutral-secondary);
+  --ploy-background-accent-primary: var(--ploy-accent-primary);
+  --ploy-background-accent-secondary: var(--ploy-accent-secondary);
+  --ploy-background-accent-tertiary: var(--ploy-accent-tertiary);
+  --ploy-background-inverse: var(--ploy-neutral-inverse-s1);
+  --ploy-border-primary: #e6e6ec;
+  --ploy-border-inverse: #2a2a36;
+  --ploy-input-background: #ffffff;
+  --ploy-input-border: #d6d6df;
+  --destructive: #a134eb;
+  --ploy-neutral-primary-50: oklch(0.982 0 0);
+  --ploy-neutral-primary-100: oklch(0.947 0 0.2);
+  --ploy-neutral-primary-200: oklch(0.895 0 0.4);
+  --ploy-neutral-primary-300: oklch(0.835 0 0.6);
+  --ploy-neutral-primary-400: oklch(0.769 0 0.8);
+  --ploy-neutral-primary-500: oklch(0.697 0 1);
+  --ploy-neutral-primary-600: oklch(0.621 0 1.2);
+  --ploy-neutral-primary-700: oklch(0.541 0 1.4);
+  --ploy-neutral-primary-800: oklch(0.457 0 1.6);
+  --ploy-neutral-primary-900: oklch(0.37 0 1.8);
+  --ploy-neutral-primary-950: oklch(0.28 0 2);
+  --ploy-neutral-inverse-50: oklch(0.98 0 352);
+  --ploy-neutral-inverse-100: oklch(0.951 0 352.8);
+  --ploy-neutral-inverse-200: oklch(0.903 0 353.6);
+  --ploy-neutral-inverse-300: oklch(0.844 0 354.4);
+  --ploy-neutral-inverse-400: oklch(0.776 0 355.2);
+  --ploy-neutral-inverse-500: oklch(0.701 0 356);
+  --ploy-neutral-inverse-600: oklch(0.62 0 356.8);
+  --ploy-neutral-inverse-700: oklch(0.533 0 357.6);
+  --ploy-neutral-inverse-800: oklch(0.441 0 358.4);
+  --ploy-neutral-inverse-900: oklch(0.345 0 359.2);
+  --ploy-neutral-inverse-950: oklch(0.244 0 0);
+  --ploy-accent-primary-50: oklch(0.98 0.013 315.81);
+  --ploy-accent-primary-100: oklch(0.938 0.038 314.01);
+  --ploy-accent-primary-200: oklch(0.868 0.08 312.21);
+  --ploy-accent-primary-300: oklch(0.782 0.135 310.41);
+  --ploy-accent-primary-400: oklch(0.684 0.194 308.61);
+  --ploy-accent-primary-500: oklch(0.576 0.255 306.81);
+  --ploy-accent-primary-600: oklch(0.54 0.227 305.81);
+  --ploy-accent-primary-700: oklch(0.486 0.208 304.81);
+  --ploy-accent-primary-800: oklch(0.424 0.174 303.81);
+  --ploy-accent-primary-900: oklch(0.355 0.138 302.81);
+  --ploy-accent-primary-950: oklch(0.28 0.103 301.81);
+  --ploy-accent-secondary-50: oklch(0.98 0.02 248);
+  --ploy-accent-secondary-100: oklch(0.932 0.054 248);
+  --ploy-accent-secondary-200: oklch(0.853 0.097 248);
+  --ploy-accent-secondary-300: oklch(0.757 0.115 248);
+  --ploy-accent-secondary-400: oklch(0.646 0.129 248);
+  --ploy-accent-secondary-500: oklch(0.523 0.115 248);
+  --ploy-accent-secondary-600: oklch(0.493 0.109 248);
+  --ploy-accent-secondary-700: oklch(0.449 0.096 248);
+  --ploy-accent-secondary-800: oklch(0.398 0.081 248);
+  --ploy-accent-secondary-900: oklch(0.341 0.066 248);
+  --ploy-accent-secondary-950: oklch(0.28 0.056 248);
+  --ploy-choice-checked-background: #a134eb;
+  --ploy-choice-checked-border: #a134eb;
+  --ploy-choice-checked-mark: #ffffff;
+  --ploy-accent-tertiary-50: oklch(0.98 0.02 248);
+  --ploy-accent-tertiary-100: oklch(0.932 0.054 248);
+  --ploy-accent-tertiary-200: oklch(0.853 0.097 248);
+  --ploy-accent-tertiary-300: oklch(0.757 0.115 248);
+  --ploy-accent-tertiary-400: oklch(0.646 0.129 248);
+  --ploy-accent-tertiary-500: oklch(0.523 0.115 248);
+  --ploy-accent-tertiary-600: oklch(0.493 0.109 248);
+  --ploy-accent-tertiary-700: oklch(0.449 0.096 248);
+  --ploy-accent-tertiary-800: oklch(0.398 0.081 248);
+  --ploy-accent-tertiary-900: oklch(0.341 0.066 248);
+  --ploy-accent-tertiary-950: oklch(0.28 0.056 248);
+  --radius-image: 18px;
+  --font-display: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --ploy-font-display: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --ploy-font-heading: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --ploy-font-body: "Geist", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --ploy-font-mono: "Geist Mono", "JetBrains Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+:root:root.dark {
+  /* Hand-tuned to sit with nnsight.net's dark dots (#cecdc3 on #100f0f). Anything
+     not set here keeps its light value: fonts, corners and the purple button. */
+  --ploy-neutral-primary: #100f0f;
+  --ploy-neutral-secondary: #1c1b1a;
+  --ploy-neutral-inverse: #ecebe4;
+  --ploy-neutral-primary-s0: #0b0a0a;
+  --ploy-neutral-primary-s1: #100f0f;
+  --ploy-neutral-primary-s2: #1c1b1a;
+  --ploy-neutral-primary-s3: #282726;
+  --ploy-neutral-primary-s4: #343331;
+  --ploy-neutral-primary-s5: #403e3c;
+  --ploy-neutral-primary-100: #282726;
+  --ploy-neutral-primary-900: #ecebe4;
+  --ploy-accent-primary: #c48cff;
+  --ploy-accent-secondary: #86c1f0;
+  --ploy-accent-tertiary: #86c1f0;
+  --ploy-accent-primary-100: #2c1a3d;
+  --ploy-accent-primary-700: #d4a8ff;
+  --ploy-accent-secondary-100: #16283a;
+  --ploy-accent-secondary-700: #9bcdf2;
+  --ploy-text-primary: #ecebe4;
+  --ploy-text-secondary: #a9a79e;
+  --ploy-text-on-accent-primary: #121218;
+  --ploy-text-on-accent-secondary: #121218;
+  --ploy-button-secondary-background: #1c1b1a;
+  --ploy-button-secondary-text: #ecebe4;
+  --ploy-button-secondary-border: #403e3c;
+  --ploy-background-inverse: #1a1918;
+  --ploy-border-primary: #2c2b29;
+  --ploy-border-inverse: #403e3c;
+  --ploy-input-background: #1c1b1a;
+  --ploy-input-border: #403e3c;
+  color-scheme: dark;
+}
+/* ploy-theme-end */
+
+@font-face {
+  font-family: "Inter";
+  src: url("/media/a01149c4-inter-300-italic-2.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/a01149c4-inter-300-italic-2.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/a01149c4-inter-300-italic-2.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/65b7cff9-inter-300-italic-3.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/65b7cff9-inter-300-italic-3.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/65b7cff9-inter-300-italic-3.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/4f4a3860-inter-300-italic-4.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/4f4a3860-inter-300-italic-4.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/4f4a3860-inter-300-italic-4.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/9d6c3f02-inter-300-italic-5.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/9d6c3f02-inter-300-italic-5.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/9d6c3f02-inter-300-italic-5.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/80952417-inter-300-italic-6.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/80952417-inter-300-italic-6.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/80952417-inter-300-italic-6.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/021c155e-inter-300-italic-7.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/021c155e-inter-300-italic-7.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/021c155e-inter-300-italic-7.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/52e273e0-inter-300-italic.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/52e273e0-inter-300-italic.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/52e273e0-inter-300-italic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/a435fa9e-inter-300-normal-2.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/a435fa9e-inter-300-normal-2.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/a435fa9e-inter-300-normal-2.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/39acd2ce-inter-300-normal-3.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/39acd2ce-inter-300-normal-3.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/39acd2ce-inter-300-normal-3.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/e8cb66be-inter-300-normal-4.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/e8cb66be-inter-300-normal-4.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/e8cb66be-inter-300-normal-4.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/4b3f6a09-inter-300-normal-5.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/4b3f6a09-inter-300-normal-5.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/4b3f6a09-inter-300-normal-5.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/5c97accf-inter-300-normal-6.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/5c97accf-inter-300-normal-6.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/5c97accf-inter-300-normal-6.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/44b9db54-inter-300-normal-7.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/44b9db54-inter-300-normal-7.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/44b9db54-inter-300-normal-7.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/75e0cc42-inter-300-normal.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/75e0cc42-inter-300-normal.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Inter";
+  src: url("/media/75e0cc42-inter-300-normal.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/dd7ea7cb-jetbrains-mono-400-italic-2.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/dd7ea7cb-jetbrains-mono-400-italic-2.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/92f7b051-jetbrains-mono-400-italic-3.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/92f7b051-jetbrains-mono-400-italic-3.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/35af35e9-jetbrains-mono-400-italic-4.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/35af35e9-jetbrains-mono-400-italic-4.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/15753cf4-jetbrains-mono-400-italic-5.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/15753cf4-jetbrains-mono-400-italic-5.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/fc194996-jetbrains-mono-400-italic.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/fc194996-jetbrains-mono-400-italic.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/c3c50e5a-jetbrains-mono-400-normal.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("/media/c3c50e5a-jetbrains-mono-400-normal.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/media/fee4754e-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Geist Mono";
+  src: url("/media/d79763bb-latin-wght-normal.woff2") format("woff2");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}

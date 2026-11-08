@@ -1,0 +1,63 @@
+---
+import Layout from "../../../../../layouts/Layout.astro";
+import BlogArticle from "../../../../../components/sections/blog/BlogArticle.astro";
+import { metaDescription } from "../../../../../components/sections/blog/seo";
+import { toListPost } from "../../../../../components/sections/blog/types";
+import { blogDb, getPost, listPosts, setBlogCacheHeaders } from "../../../../../lib/blog-db";
+
+export async function getStaticPaths() {
+  const { posts } = await listPosts();
+  return posts.map((p) => {
+    const [year, month, day] = p.pubDate.split("-");
+    return { params: { year, month, day, slug: p.slug } };
+  });
+}
+
+export const ployPreviewParams = { year: "2026", month: "09", day: "09", slug: "nnsight-08" };
+export const ployDbRecordRoute = {
+  ployDbId: "pdb_ae6bf5ce7c844003a34c",
+  table: "tbl_6731815e084e42828404",
+  field: "fld_2577210c48854de8",
+  param: "slug",
+  published: { field: "fld_acbe1df0fc0a4130", invert: true },
+};
+
+const { year, month, day, slug } = Astro.params;
+const { post, transient } = await getPost(slug ?? "");
+if (transient) return blogDb.unavailable();
+if (!post) return new Response(null, { status: 404 });
+// The date segments must match the post's own date.
+if (post.pubDate !== `${year}-${month}-${day}`) return new Response(null, { status: 404 });
+
+const list = await listPosts();
+if (list.transient) return blogDb.unavailable();
+const others = list.posts.filter((p) => p.slug !== post.slug);
+const related = [
+  ...others.filter((p) => p.category === post.category),
+  ...others.filter((p) => p.category !== post.category),
+]
+  .slice(0, 3)
+  .map(toListPost);
+
+setBlogCacheHeaders(Astro.response.headers);
+
+const description = metaDescription(post.description || post.title);
+const site = Astro.site ? Astro.site.origin : Astro.url.origin;
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: post.subtitle ? `${post.title}: ${post.subtitle}` : post.title,
+  description,
+  datePublished: post.pubDate,
+  articleSection: post.category,
+  url: `${site}${post.path}`,
+  author: post.authors.map((a) => ({ "@type": a.name === "NDIF Team" ? "Organization" : "Person", name: a.name })),
+  publisher: { "@type": "Organization", name: "NNsight" },
+};
+---
+
+<Layout title={`${post.subtitle ? `${post.title}: ${post.subtitle}` : post.title} - nnsight`} description={description} type="article" jsonLd={jsonLd}>
+  <main id="main-content" tabindex={-1} class="blog-type">
+    <BlogArticle post={post} related={related} />
+  </main>
+</Layout>

@@ -1,0 +1,10 @@
+# Bun runtime + package manager configuration.
+# Docs: https://bun.com/docs/runtime/bunfig
+
+[install]
+# minimumReleaseAge = 172800 (default: 0 — no restriction), unit: seconds
+# Rejects packages published within the last 48 hours. Bun's equivalent of
+# npm's `min-release-age` (which Bun does not read from .npmrc) — keep this
+# value in sync with .npmrc (48h = 2 days). Both gates only apply at
+# resolution time; installing from the committed lockfiles is never blocked.
+minimumReleaseAge = 172800

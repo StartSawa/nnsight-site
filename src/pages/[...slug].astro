@@ -1,0 +1,28 @@
+---
+/**
+ * Every nnsight.net docs page, copied word for word into src/content/docs by
+ * scripts/import-docs.ts and shown in the site's docs layout.
+ */
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
+import DocsShell from "@/components/docs/DocsShell.astro";
+import DocsSegments from "@/components/docs/DocsSegments.astro";
+import type { Seg, TocItem } from "@/components/docs/types";
+import { DOC_PAGES, type DocMeta } from "@/lib/docs-links";
+
+export const prerender = true;
+
+type Page = DocMeta & { toc: TocItem[]; segments: Seg[] };
+
+export function getStaticPaths() {
+  return DOC_PAGES.map((p) => ({ params: { slug: p.path.slice(1) }, props: { path: p.path } }));
+}
+
+const { path } = Astro.props as { path: string };
+const file = join(process.cwd(), "src/content/docs", path.slice(1).replaceAll("/", "__") + ".json");
+const page = JSON.parse(readFileSync(file, "utf8")) as Page;
+---
+
+<DocsShell title={page.title} description={page.description} path={page.path} section={page.section} toc={page.toc}>
+  <DocsSegments segments={page.segments} />
+</DocsShell>

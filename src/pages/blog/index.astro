@@ -1,0 +1,21 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { BlogIndex } from "../../components/sections/blog/blog-index";
+import { CATEGORIES, toListPost } from "../../components/sections/blog/types";
+import { blogDb, listPosts, setBlogCacheHeaders } from "../../lib/blog-db";
+
+const { posts, transient } = await listPosts();
+if (transient) return blogDb.unavailable();
+setBlogCacheHeaders(Astro.response.headers);
+
+const categories = [...new Set([...CATEGORIES, ...posts.map((p) => p.category).filter(Boolean)])].sort();
+---
+
+<Layout
+  title="Blog - nnsight"
+  description="Release notes, guides and ecosystem news from the NNsight and NDIF team: new versions, performance work, vLLM and NDIF remote execution."
+>
+  <main id="main-content" tabindex={-1} class="blog-type">
+    <BlogIndex heading="Blog" posts={posts.map(toListPost)} categories={categories} activeCategory={null} mode="index" />
+  </main>
+</Layout>

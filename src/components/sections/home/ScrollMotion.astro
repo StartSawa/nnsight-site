@@ -1,0 +1,63 @@
+---
+/**
+ * Scroll motion for the home page: sections and cards rise in as they come into
+ * view, and each capability card's diagram sweeps through its layers. Styles are
+ * in globals.css under "Scroll motion".
+ *
+ * Inline on purpose. Content only starts hidden once this has run, and it needs
+ * no download, so nothing waits on a big script. With no JavaScript, or with less
+ * motion requested, it never switches on and everything simply shows.
+ */
+---
+
+<script is:inline>
+  (function () {
+    if (
+      matchMedia("(prefers-reduced-motion: reduce)").matches ||
+      !("IntersectionObserver" in window)
+    ) {
+      return;
+    }
+    document.documentElement.classList.add("motion-ready");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("[data-rise-group]").forEach(function (group) {
+        Array.from(group.children).forEach(function (child, i) {
+          child.style.setProperty("--i", i);
+        });
+      });
+
+      // Each card plays its operation once, like a forward (or backward) pass
+      // sweeping through GPT-2's 12 layers.
+      document.querySelectorAll("[data-card]").forEach(function (card, i) {
+        card.style.setProperty("--card-delay", (i % 2) * 0.12 + "s");
+        const backward = card.dataset.card === "gradients";
+        card.querySelectorAll("[data-cell]").forEach(function (cell) {
+          const layer = Number(cell.dataset.layer);
+          const position = backward ? 11 - layer : layer;
+          const late = "late" in cell.dataset ? 0.35 : 0;
+          cell.style.setProperty("--d", position * 0.055 + late + "s");
+        });
+        card.querySelectorAll("[data-stack]").forEach(function (stack, n) {
+          stack.style.setProperty("--i", n);
+        });
+      });
+
+      const seen = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.dataset.seen = "";
+            seen.unobserve(entry.target);
+          });
+        },
+        { rootMargin: "0px 0px -15% 0px" },
+      );
+      document
+        .querySelectorAll("[data-rise], [data-rise-group], [data-card]")
+        .forEach(function (el) {
+          seen.observe(el);
+        });
+    });
+  })();
+</script>

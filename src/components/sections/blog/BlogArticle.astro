@@ -1,0 +1,186 @@
+---
+// Long-read article template: a sticky left rail (Back to index, authors,
+// metadata, table of contents) beside the title and body, then more posts.
+import { CalendarDays, Clock, Library } from "lucide-react";
+import { renderRichTextWithHeadings } from "../../../../ploy.ploydb-richtext.mjs";
+import "../../../../ploy.ploydb-richtext.css";
+import { Container } from "../../design-system/ui/container";
+import { AuthorAvatar, PostCard } from "./blog-parts";
+import BlogSegments from "./BlogSegments.astro";
+import { splitSegments } from "./segments";
+import { categoryPath, type BlogPost } from "./types";
+
+interface Props {
+  post: BlogPost;
+  related: BlogPost[];
+}
+
+const { post, related } = Astro.props;
+const segments = splitSegments(post.body);
+
+// Table of contents from the top-level Markdown segments (h2 and h3).
+const toc = segments
+  .filter((s) => s.type === "md")
+  .flatMap((s) => renderRichTextWithHeadings((s as { md: string }).md).headings)
+  .filter((h: { level: number }) => h.level === 2 || h.level === 3) as {
+  id: string;
+  label: string;
+  level: number;
+}[];
+---
+
+<article>
+  <Container>
+    <div class="grid pt-10 pb-20 md:pt-16 md:pb-28 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-x-12">
+      <aside class="hidden lg:block">
+        <div class="sticky top-28 flex max-h-[calc(100vh-8rem)] flex-col gap-9 overflow-y-auto pb-6 pr-2">
+          <a
+            href="/blog"
+            class="text-[0.875rem] font-medium text-ploy-text-secondary transition-colors hover:text-ploy-text-primary"
+          >
+            Back to index
+          </a>
+
+          <div class="flex flex-col gap-4">
+            {
+              post.authors.map((a) => (
+                <div class="flex items-center gap-3">
+                  <AuthorAvatar author={a} size={40} />
+                  <div class="text-[0.875rem] leading-tight">
+                    <p class="font-semibold text-ploy-text-primary">{a.name}</p>
+                    <p class="mt-1 text-ploy-text-secondary">{a.role}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+
+          <div>
+            <p class="text-[0.8125rem] font-medium text-ploy-text-primary">Metadata</p>
+            <ul class="mt-3 flex flex-col gap-2.5 text-[0.875rem] text-ploy-text-secondary">
+              <li class="flex items-center gap-2.5">
+                <CalendarDays className="size-4 shrink-0" aria-hidden="true" />
+                <time datetime={post.pubDate}>{post.dateLabel}</time>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <Library className="size-4 shrink-0" aria-hidden="true" />
+                <span>
+                  in <a href={categoryPath(post.category)} class="text-ploy-accent-primary hover:underline hover:underline-offset-4">{post.category}</a>
+                </span>
+              </li>
+              <li class="flex items-center gap-2.5">
+                <Clock className="size-4 shrink-0" aria-hidden="true" />
+                <span>{post.readTime}</span>
+              </li>
+            </ul>
+          </div>
+
+          {
+            toc.length > 0 && (
+              <nav aria-labelledby="toc-heading">
+                <p id="toc-heading" class="text-[0.8125rem] font-medium text-ploy-text-primary">
+                  Table of contents
+                </p>
+                <ul class="mt-3 flex flex-col gap-2 border-l border-ploy-border-primary text-[0.8125rem] leading-[1.45]">
+                  {toc.map((h) => (
+                    <li>
+                      <a
+                        href={`#${h.id}`}
+                        class:list={[
+                          "-ml-px block border-l border-transparent text-ploy-text-secondary transition-colors hover:border-ploy-text-primary hover:text-ploy-text-primary",
+                          h.level === 2 ? "pl-4" : "pl-7",
+                        ]}
+                      >
+                        {h.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </nav>
+            )
+          }
+        </div>
+      </aside>
+
+      <div class="min-w-0">
+       <div class="mx-auto w-full max-w-[46rem]">
+        <a
+          href="/blog"
+          class="text-[0.875rem] font-medium text-ploy-text-secondary transition-colors hover:text-ploy-text-primary lg:hidden"
+        >
+          Back to index
+        </a>
+
+        <header class="mt-8 lg:mt-0">
+          <div class="flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.875rem] text-ploy-text-secondary">
+            <time datetime={post.pubDate}>{post.dateLabel}</time>
+            <span aria-hidden="true">·</span>
+            <span>in <a href={categoryPath(post.category)} class="font-medium text-ploy-accent-primary hover:underline hover:underline-offset-4">{post.category}</a></span>
+            <span aria-hidden="true">·</span>
+            <span>{post.readTime}</span>
+          </div>
+          <h1 class="mt-5 text-balance font-heading text-[2.25rem] font-semibold leading-[1.08] tracking-[-0.025em] text-ploy-text-primary md:text-[3rem] md:tracking-[-0.03em]">
+            {post.title}
+          </h1>
+          {
+            post.subtitle && (
+              <p class="mt-4 text-balance text-[1.25rem] leading-[1.4] text-ploy-text-secondary md:text-[1.5rem]">{post.subtitle}</p>
+            )
+          }
+
+          <div class="mt-8 flex flex-wrap gap-x-6 gap-y-4 lg:hidden">
+            {
+              post.authors.map((a) => (
+                <div class="flex items-center gap-3">
+                  <AuthorAvatar author={a} size={36} />
+                  <div class="text-[0.875rem] leading-tight">
+                    <p class="font-semibold text-ploy-text-primary">{a.name}</p>
+                    <p class="mt-0.5 text-ploy-text-secondary">{a.role}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </header>
+
+        {
+          toc.length > 0 && (
+            <details class="group mt-8 rounded-[6px] shadow-[inset_0_0_0_1px_var(--ploy-border-primary)] lg:hidden">
+              <summary class="flex cursor-pointer list-none items-center justify-between px-4 py-3 text-[0.875rem] font-medium text-ploy-text-primary [&::-webkit-details-marker]:hidden">
+                Table of contents
+                <svg aria-hidden="true" viewBox="0 0 16 16" class="size-4 text-ploy-text-secondary transition-transform group-open:rotate-180"><path d="M4 6l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+              </summary>
+              <ul class="flex flex-col gap-2 border-t border-ploy-border-primary px-4 py-4 text-[0.875rem]">
+                {toc.map((h) => (
+                  <li class:list={[h.level === 3 && "pl-4"]}>
+                    <a href={`#${h.id}`} class="text-ploy-text-secondary hover:text-ploy-text-primary">{h.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          )
+        }
+
+        <div class="mt-10 border-t border-ploy-border-primary pt-4 md:mt-14 md:pt-6">
+          <BlogSegments segments={segments} />
+        </div>
+       </div>
+      </div>
+    </div>
+  </Container>
+
+  {
+    related.length > 0 && (
+      <section class="border-t border-ploy-border-primary py-16 md:py-24">
+        <Container>
+          <h2 class="font-heading text-[2rem] font-semibold tracking-[-0.03em] text-ploy-text-primary md:text-[2.5rem]">
+            <a href="/blog" class="hover:text-ploy-accent-primary">Blog</a>
+          </h2>
+          <div class="mt-10 grid gap-5 md:mt-12 md:grid-cols-2 lg:grid-cols-3">
+            {related.map((p) => <PostCard post={p} />)}
+          </div>
+        </Container>
+      </section>
+    )
+  }
+</article>

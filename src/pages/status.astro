@@ -1,0 +1,10 @@
+---
+import DocsShell from "@/components/docs/DocsShell.astro";
+import { StatusBoard } from "@/components/pages/status/status-board";
+
+export const prerender = true;
+---
+
+<DocsShell title="Status" description="Which models NDIF is serving right now, live from NDIF's status API." path="/status" wide>
+  <StatusBoard client:load />
+</DocsShell>

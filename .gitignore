@@ -1,0 +1,23 @@
+# build output
+dist/
+.astro/
+
+# dependencies
+node_modules/
+
+# logs
+npm-debug.log*
+logs/
+
+# environment variables and Vercel project link
+.env
+.env.*
+.vercel
+
+# editor / OS
+.DS_Store
+.idea/
+
+
+# internal planning notes stay on this machine
+docs/plans/

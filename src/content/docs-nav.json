@@ -1,0 +1,826 @@
+{
+  "getting-started": {
+    "label": "Getting Started",
+    "path": "/getting-started",
+    "children": [
+      {
+        "label": "Installation",
+        "path": "/getting-started/installation"
+      },
+      {
+        "label": "Quick Start",
+        "path": "/getting-started/quickstart"
+      }
+    ],
+    "own": true
+  },
+  "documentation": {
+    "label": "Documentation",
+    "path": "/documentation",
+    "children": [
+      {
+        "label": "_c",
+        "path": "/documentation/_c",
+        "children": [
+          {
+            "label": "backtrace",
+            "path": "/documentation/_c/backtrace"
+          }
+        ],
+        "own": true
+      },
+      {
+        "label": "intervention",
+        "path": "/documentation/intervention",
+        "children": [
+          {
+            "label": "backends",
+            "path": "/documentation/intervention/backends",
+            "children": [
+              {
+                "label": "display",
+                "path": "/documentation/intervention/backends/display"
+              },
+              {
+                "label": "local",
+                "path": "/documentation/intervention/backends/local"
+              },
+              {
+                "label": "remote",
+                "path": "/documentation/intervention/backends/remote"
+              }
+            ],
+            "own": true
+          },
+          {
+            "label": "backward",
+            "path": "/documentation/intervention/backward"
+          },
+          {
+            "label": "barrier",
+            "path": "/documentation/intervention/barrier"
+          },
+          {
+            "label": "batching",
+            "path": "/documentation/intervention/batching"
+          },
+          {
+            "label": "cache",
+            "path": "/documentation/intervention/cache"
+          },
+          {
+            "label": "editing",
+            "path": "/documentation/intervention/editing"
+          },
+          {
+            "label": "envoy",
+            "path": "/documentation/intervention/envoy"
+          },
+          {
+            "label": "eproperty",
+            "path": "/documentation/intervention/eproperty"
+          },
+          {
+            "label": "errors",
+            "path": "/documentation/intervention/errors"
+          },
+          {
+            "label": "fragments",
+            "path": "/documentation/intervention/fragments"
+          },
+          {
+            "label": "interleaver",
+            "path": "/documentation/intervention/interleaver"
+          },
+          {
+            "label": "iterator",
+            "path": "/documentation/intervention/iterator"
+          },
+          {
+            "label": "serialization",
+            "path": "/documentation/intervention/serialization"
+          },
+          {
+            "label": "source",
+            "path": "/documentation/intervention/source"
+          },
+          {
+            "label": "tracer",
+            "path": "/documentation/intervention/tracer"
+          },
+          {
+            "label": "util",
+            "path": "/documentation/intervention/util"
+          }
+        ],
+        "own": true
+      },
+      {
+        "label": "modeling",
+        "path": "/documentation/modeling",
+        "children": [
+          {
+            "label": "base",
+            "path": "/documentation/modeling/base"
+          },
+          {
+            "label": "diffusion",
+            "path": "/documentation/modeling/diffusion"
+          },
+          {
+            "label": "huggingface",
+            "path": "/documentation/modeling/huggingface"
+          },
+          {
+            "label": "language",
+            "path": "/documentation/modeling/language"
+          },
+          {
+            "label": "mixins",
+            "path": "/documentation/modeling/mixins",
+            "children": [
+              {
+                "label": "loadable",
+                "path": "/documentation/modeling/mixins/loadable"
+              },
+              {
+                "label": "meta",
+                "path": "/documentation/modeling/mixins/meta"
+              },
+              {
+                "label": "remotable",
+                "path": "/documentation/modeling/mixins/remotable"
+              }
+            ],
+            "own": true
+          },
+          {
+            "label": "quantization",
+            "path": "/documentation/modeling/quantization"
+          },
+          {
+            "label": "tp",
+            "path": "/documentation/modeling/tp",
+            "children": [
+              {
+                "label": "envoys",
+                "path": "/documentation/modeling/tp/envoys"
+              },
+              {
+                "label": "fragments",
+                "path": "/documentation/modeling/tp/fragments"
+              },
+              {
+                "label": "plan",
+                "path": "/documentation/modeling/tp/plan"
+              }
+            ],
+            "own": true
+          },
+          {
+            "label": "transformers",
+            "path": "/documentation/modeling/transformers"
+          },
+          {
+            "label": "vllm",
+            "path": "/documentation/modeling/vllm",
+            "children": [
+              {
+                "label": "async_backend",
+                "path": "/documentation/modeling/vllm/async_backend"
+              },
+              {
+                "label": "batching",
+                "path": "/documentation/modeling/vllm/batching"
+              },
+              {
+                "label": "collect",
+                "path": "/documentation/modeling/vllm/collect"
+              },
+              {
+                "label": "envoys",
+                "path": "/documentation/modeling/vllm/envoys"
+              },
+              {
+                "label": "engines",
+                "path": "/documentation/modeling/vllm/engines",
+                "children": [
+                  {
+                    "label": "engine",
+                    "path": "/documentation/modeling/vllm/engines/engine"
+                  }
+                ],
+                "own": true
+              },
+              {
+                "label": "fragments",
+                "path": "/documentation/modeling/vllm/fragments"
+              },
+              {
+                "label": "interleaver",
+                "path": "/documentation/modeling/vllm/interleaver"
+              },
+              {
+                "label": "model_runners",
+                "path": "/documentation/modeling/vllm/model_runners",
+                "children": [
+                  {
+                    "label": "GPUModelRunner",
+                    "path": "/documentation/modeling/vllm/model_runners/GPUModelRunner"
+                  }
+                ],
+                "own": true
+              },
+              {
+                "label": "registration",
+                "path": "/documentation/modeling/vllm/registration"
+              },
+              {
+                "label": "serve",
+                "path": "/documentation/modeling/vllm/serve",
+                "children": [
+                  {
+                    "label": "backend",
+                    "path": "/documentation/modeling/vllm/serve/backend"
+                  },
+                  {
+                    "label": "cli",
+                    "path": "/documentation/modeling/vllm/serve/cli"
+                  },
+                  {
+                    "label": "http",
+                    "path": "/documentation/modeling/vllm/serve/http"
+                  },
+                  {
+                    "label": "server",
+                    "path": "/documentation/modeling/vllm/serve/server"
+                  }
+                ],
+                "own": true
+              },
+              {
+                "label": "tracer",
+                "path": "/documentation/modeling/vllm/tracer"
+              },
+              {
+                "label": "vllm",
+                "path": "/documentation/modeling/vllm/vllm"
+              },
+              {
+                "label": "workers",
+                "path": "/documentation/modeling/vllm/workers",
+                "children": [
+                  {
+                    "label": "GPUWorker",
+                    "path": "/documentation/modeling/vllm/workers/GPUWorker"
+                  }
+                ],
+                "own": true
+              }
+            ],
+            "own": true
+          },
+          {
+            "label": "vlm",
+            "path": "/documentation/modeling/vlm"
+          }
+        ],
+        "own": true
+      },
+      {
+        "label": "schema",
+        "path": "/documentation/schema",
+        "children": [
+          {
+            "label": "config",
+            "path": "/documentation/schema/config"
+          },
+          {
+            "label": "request",
+            "path": "/documentation/schema/request"
+          },
+          {
+            "label": "response",
+            "path": "/documentation/schema/response"
+          }
+        ],
+        "own": true
+      },
+      {
+        "label": "tracing",
+        "path": "/documentation/tracing",
+        "children": [
+          {
+            "label": "backend",
+            "path": "/documentation/tracing/backend"
+          },
+          {
+            "label": "globals",
+            "path": "/documentation/tracing/globals"
+          },
+          {
+            "label": "hint",
+            "path": "/documentation/tracing/hint"
+          },
+          {
+            "label": "tracer",
+            "path": "/documentation/tracing/tracer"
+          },
+          {
+            "label": "util",
+            "path": "/documentation/tracing/util"
+          }
+        ],
+        "own": true
+      },
+      {
+        "label": "ndif",
+        "path": "/documentation/ndif"
+      },
+      {
+        "label": "util",
+        "path": "/documentation/util"
+      }
+    ],
+    "own": true
+  },
+  "features": {
+    "label": "Features",
+    "path": "/features",
+    "children": [
+      {
+        "label": "Getting Activations",
+        "path": "/features/1_getting"
+      },
+      {
+        "label": "Setting Activations",
+        "path": "/features/2_setting"
+      },
+      {
+        "label": "Gradients",
+        "path": "/features/3_gradients"
+      },
+      {
+        "label": "Multiple Token Generation",
+        "path": "/features/4_multiple_token"
+      },
+      {
+        "label": "Loading a Model",
+        "path": "/features/5_loading"
+      },
+      {
+        "label": "Module Access",
+        "path": "/features/6_modules"
+      },
+      {
+        "label": "Model Editing",
+        "path": "/features/7_model_editing"
+      },
+      {
+        "label": "Batching",
+        "path": "/features/8_batching"
+      },
+      {
+        "label": "Empty Invokers",
+        "path": "/features/9_empty_invokers"
+      },
+      {
+        "label": "Cache",
+        "path": "/features/10_cache"
+      },
+      {
+        "label": "Intermediate Operations",
+        "path": "/features/11_source"
+      },
+      {
+        "label": "Early Stopping",
+        "path": "/features/12_early_stopping"
+      },
+      {
+        "label": "Skip Execution",
+        "path": "/features/13_skip"
+      },
+      {
+        "label": "Scan",
+        "path": "/features/14_scan"
+      },
+      {
+        "label": "Remote Execution",
+        "path": "/features/15_remote_execution"
+      },
+      {
+        "label": "vLLM",
+        "path": "/features/16_vllm_support"
+      },
+      {
+        "label": "Tensor Parallelism",
+        "path": "/features/17_tensor_parallel"
+      },
+      {
+        "label": "Quantization",
+        "path": "/features/18_quantization"
+      }
+    ],
+    "own": true
+  },
+  "vllm": {
+    "label": "vLLM",
+    "path": "/vllm",
+    "children": [
+      {
+        "label": "Locations",
+        "path": "/vllm/locations"
+      },
+      {
+        "label": "Models",
+        "path": "/vllm/loading",
+        "children": [
+          {
+            "label": "Loading models",
+            "path": "/vllm/loading"
+          },
+          {
+            "label": "Capabilities and limits",
+            "path": "/vllm/capabilities"
+          }
+        ],
+        "own": false
+      },
+      {
+        "label": "Reading",
+        "path": "/vllm/capture",
+        "children": [
+          {
+            "label": "Capture",
+            "path": "/vllm/capture"
+          },
+          {
+            "label": "Attention",
+            "path": "/vllm/attention"
+          },
+          {
+            "label": "Logit lens",
+            "path": "/vllm/logit-lens"
+          }
+        ],
+        "own": false
+      },
+      {
+        "label": "Writing",
+        "path": "/vllm/steering",
+        "children": [
+          {
+            "label": "Steering",
+            "path": "/vllm/steering"
+          },
+          {
+            "label": "Activation patching",
+            "path": "/vllm/patching"
+          },
+          {
+            "label": "Ablation",
+            "path": "/vllm/ablation"
+          },
+          {
+            "label": "Direct logit attribution",
+            "path": "/vllm/attribution"
+          },
+          {
+            "label": "Conditional interventions",
+            "path": "/vllm/conditional"
+          },
+          {
+            "label": "SAE features",
+            "path": "/vllm/sae"
+          }
+        ],
+        "own": false
+      },
+      {
+        "label": "Editing the engine",
+        "path": "/vllm/editing"
+      },
+      {
+        "label": "Generating",
+        "path": "/vllm/generation",
+        "children": [
+          {
+            "label": "Generation",
+            "path": "/vllm/generation"
+          },
+          {
+            "label": "Chat and tokens",
+            "path": "/vllm/chat"
+          }
+        ],
+        "own": false
+      },
+      {
+        "label": "Serving",
+        "path": "/vllm/serving",
+        "children": [
+          {
+            "label": "Async and servers",
+            "path": "/vllm/serving"
+          },
+          {
+            "label": "Tensor parallelism",
+            "path": "/vllm/tensor-parallel"
+          }
+        ],
+        "own": false
+      },
+      {
+        "label": "Examples",
+        "path": "/vllm/examples/causal-tracing",
+        "children": [
+          {
+            "label": "Causal tracing",
+            "path": "/vllm/examples/causal-tracing"
+          },
+          {
+            "label": "Jacobian lens",
+            "path": "/vllm/examples/jacobian-lens"
+          },
+          {
+            "label": "A linear probe",
+            "path": "/vllm/examples/probe"
+          },
+          {
+            "label": "Concept directions",
+            "path": "/vllm/examples/emotion-tracker"
+          }
+        ],
+        "own": false
+      },
+      {
+        "label": "Performance",
+        "path": "/vllm/performance"
+      },
+      {
+        "label": "Comparisons",
+        "path": "/vllm/comparisons"
+      }
+    ],
+    "own": true
+  },
+  "tutorials": {
+    "label": "Tutorials",
+    "path": "/tutorials",
+    "children": [
+      {
+        "label": "Tutorials",
+        "path": "/tutorials/tutorials",
+        "children": [
+          {
+            "label": "Getting Started",
+            "path": "/tutorials/tutorials/get_started/walkthrough",
+            "children": [
+              {
+                "label": "Walkthrough",
+                "path": "/tutorials/tutorials/get_started/walkthrough"
+              },
+              {
+                "label": "Chat Templates",
+                "path": "/tutorials/tutorials/get_started/chat_templates"
+              },
+              {
+                "label": "Remote Access",
+                "path": "/tutorials/tutorials/get_started/start_remote_access"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Migrating",
+            "path": "/tutorials/tutorials/migrating/from_transformerlens",
+            "children": [
+              {
+                "label": "From TransformerLens",
+                "path": "/tutorials/tutorials/migrating/from_transformerlens"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Causal Tracing",
+            "path": "/tutorials/tutorials/causal_mediation_analysis/causal_models_intro",
+            "children": [
+              {
+                "label": "Causal Models Intro",
+                "path": "/tutorials/tutorials/causal_mediation_analysis/causal_models_intro"
+              },
+              {
+                "label": "Activation Patching",
+                "path": "/tutorials/tutorials/causal_mediation_analysis/activation_patching"
+              },
+              {
+                "label": "Attribution Patching",
+                "path": "/tutorials/tutorials/causal_mediation_analysis/attribution_patching"
+              },
+              {
+                "label": "Causal Mediation I",
+                "path": "/tutorials/tutorials/causal_mediation_analysis/causal_mediation_analysis_i"
+              },
+              {
+                "label": "Causal Mediation II",
+                "path": "/tutorials/tutorials/causal_mediation_analysis/causal_mediation_analysis_ii"
+              },
+              {
+                "label": "DAS",
+                "path": "/tutorials/tutorials/causal_mediation_analysis/DAS"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Probing",
+            "path": "/tutorials/tutorials/probing/logit_lens",
+            "children": [
+              {
+                "label": "Logit Lens",
+                "path": "/tutorials/tutorials/probing/logit_lens"
+              },
+              {
+                "label": "Diffusion Lens",
+                "path": "/tutorials/tutorials/probing/diffusion_lens"
+              },
+              {
+                "label": "Concept Erasure",
+                "path": "/tutorials/tutorials/probing/concept_erasure"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Attention",
+            "path": "/tutorials/tutorials/attention/attention_heads",
+            "children": [
+              {
+                "label": "Attention Patterns and Per-Head Detection",
+                "path": "/tutorials/tutorials/attention/attention_heads"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Circuits",
+            "path": "/tutorials/tutorials/circuits/attribution_graphs",
+            "children": [
+              {
+                "label": "Attribution Graphs",
+                "path": "/tutorials/tutorials/circuits/attribution_graphs"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Architectures",
+            "path": "/tutorials/tutorials/architectures/moe_routing",
+            "children": [
+              {
+                "label": "MoE Routing",
+                "path": "/tutorials/tutorials/architectures/moe_routing"
+              },
+              {
+                "label": "State-Space Models",
+                "path": "/tutorials/tutorials/architectures/state_space_models"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Engineering",
+            "path": "/tutorials/tutorials/engineering/activation_caching",
+            "children": [
+              {
+                "label": "Dataset-Scale Activation Caching",
+                "path": "/tutorials/tutorials/engineering/activation_caching"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Steering",
+            "path": "/tutorials/tutorials/steering/dict_learning",
+            "children": [
+              {
+                "label": "Dictionary Learning",
+                "path": "/tutorials/tutorials/steering/dict_learning"
+              },
+              {
+                "label": "Evaluating SAEs",
+                "path": "/tutorials/tutorials/steering/evaluating_saes"
+              },
+              {
+                "label": "LoRA Tutorial",
+                "path": "/tutorials/tutorials/steering/LoRA_tutorial"
+              }
+            ],
+            "own": false
+          },
+          {
+            "label": "Vision",
+            "path": "/tutorials/tutorials/vision/cross-attention-ablation",
+            "children": [
+              {
+                "label": "Cross-Attention Ablation",
+                "path": "/tutorials/tutorials/vision/cross-attention-ablation"
+              }
+            ],
+            "own": false
+          }
+        ],
+        "own": true
+      },
+      {
+        "label": "Mini Papers",
+        "path": "/tutorials/mini-papers",
+        "children": [
+          {
+            "label": "Function Vectors",
+            "path": "/tutorials/mini-papers/todd_function_vectors"
+          },
+          {
+            "label": "Massive Activations",
+            "path": "/tutorials/mini-papers/massive-activations"
+          },
+          {
+            "label": "Induction Heads and the ICL Phase Change",
+            "path": "/tutorials/mini-papers/induction-heads-phase-change"
+          },
+          {
+            "label": "Under-trained Tokens",
+            "path": "/tutorials/mini-papers/under-trained-tokens"
+          },
+          {
+            "label": "Chain-of-Thought Faithfulness",
+            "path": "/tutorials/mini-papers/cot-faithfulness"
+          },
+          {
+            "label": "Belief Lookbacks",
+            "path": "/tutorials/mini-papers/belief-lookbacks"
+          },
+          {
+            "label": "Geometry of Truth",
+            "path": "/tutorials/mini-papers/marks_geometry_of_truth"
+          },
+          {
+            "label": "LLM Depth",
+            "path": "/tutorials/mini-papers/csordas_llm_depth"
+          },
+          {
+            "label": "Dual Route Induction",
+            "path": "/tutorials/mini-papers/feucht_dual_route_induction"
+          },
+          {
+            "label": "Demystifying Memorization",
+            "path": "/tutorials/mini-papers/huang_demystifying_memorization"
+          },
+          {
+            "label": "Jacobian Lens",
+            "path": "/tutorials/mini-papers/jacobian-lens"
+          },
+          {
+            "label": "Patchscopes",
+            "path": "/tutorials/mini-papers/patchscopes"
+          },
+          {
+            "label": "IOI Path Patching",
+            "path": "/tutorials/mini-papers/ioi-path-patching"
+          },
+          {
+            "label": "Progress Measures for Grokking",
+            "path": "/tutorials/mini-papers/grokking-progress-measures"
+          },
+          {
+            "label": "Emergent World Models",
+            "path": "/tutorials/mini-papers/othello-world-models"
+          },
+          {
+            "label": "Concept Attention",
+            "path": "/tutorials/mini-papers/concept-attention"
+          },
+          {
+            "label": "VLM Logit Lens",
+            "path": "/tutorials/mini-papers/vlm-logit-lens"
+          },
+          {
+            "label": "Cyclic Arithmetic",
+            "path": "/tutorials/mini-papers/cyclic-arithmetic"
+          },
+          {
+            "label": "Gaze Heads",
+            "path": "/tutorials/mini-papers/gaze-heads"
+          },
+          {
+            "label": "Matryoshka Attribution",
+            "path": "/tutorials/mini-papers/matryoshka-attribution"
+          }
+        ],
+        "own": true
+      }
+    ],
+    "own": true
+  }
+}

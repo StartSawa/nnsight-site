@@ -1,0 +1,11 @@
+# gitleaks configuration — extends the default ruleset.
+# Scans run in CI (.github/workflows/security-scan.yml) over full git history.
+#
+# False positives: prefer an inline `# gitleaks:allow` comment on the flagged
+# line, or add a scoped [[allowlists]] entry below with a description saying
+# why the match is not a real secret (see ploy-world's .gitleaks.toml for
+# examples of scoped allowlists).
+title = "tenant-starter-astro gitleaks config"
+
+[extend]
+useDefault = true

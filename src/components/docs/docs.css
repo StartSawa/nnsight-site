@@ -1,0 +1,65 @@
+/*
+ * Pieces of the copied nnsight.net pages that prose classes can't reach:
+ * API reference symbols, Material icons, typeset math and inline SVG charts.
+ */
+
+/* API reference: the empty symbol tag before each name becomes a small badge. */
+.docs-body .doc-symbol {
+  display: inline-block;
+  margin-right: 0.5em;
+  padding: 0.1em 0.45em;
+  border-radius: 4px;
+  background: rgb(161 52 235 / 0.1);
+  color: var(--ploy-accent-primary);
+  font-family: var(--font-mono);
+  font-size: 0.55em;
+  font-weight: 600;
+  line-height: 1.5;
+  vertical-align: 0.2em;
+}
+.docs-body .doc-symbol-module::after { content: "mod"; }
+.docs-body .doc-symbol-class::after { content: "class"; }
+.docs-body .doc-symbol-function::after { content: "func"; }
+.docs-body .doc-symbol-method::after { content: "meth"; }
+.docs-body .doc-symbol-attribute::after { content: "attr"; }
+.docs-body .doc-symbol-parameter::after { content: "param"; }
+.docs-body .doc-symbol-type_alias::after,
+.docs-body .doc-symbol-type_parameter::after { content: "type"; }
+.docs-body .doc-symbol-heading { background: rgb(67 133 190 / 0.12); color: var(--ploy-accent-secondary); }
+.docs-body .doc-label code {
+  font-size: 0.7em;
+  font-weight: 500;
+  color: var(--ploy-text-secondary);
+}
+.docs-body .doc-section-title {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  color: var(--ploy-text-secondary);
+}
+
+/* Material icons inline with text (section lists on the index pages). */
+.docs-body .twemoji {
+  display: inline-flex;
+  width: 1.15em;
+  height: 1.15em;
+  margin-right: 0.35em;
+  vertical-align: -0.2em;
+}
+.docs-body .twemoji svg {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
+
+/* Charts drawn as inline SVG scale with the column. */
+.docs-body svg:not(.twemoji svg):not(.katex svg) {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Display math scrolls inside the column instead of widening the page. */
+.docs-body .doc-math {
+  margin: 1.5rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}

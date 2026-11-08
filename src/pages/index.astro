@@ -1,0 +1,16 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { HomePage } from "../components/design-system/pages/home/page";
+import ScrollMotion from "../components/sections/home/ScrollMotion.astro";
+
+export const prerender = true;
+---
+
+<Layout title={"nnsight"} description={"Documentation for the nnsight Python library"}>
+  <ScrollMotion slot="head" />
+  <HomePage />
+</Layout>
+
+<script>
+  import "@/lib/moving-dots";
+</script>

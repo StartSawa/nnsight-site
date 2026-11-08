@@ -1,0 +1,1090 @@
+{
+  "pages": [
+    {
+      "path": "/about",
+      "section": "about",
+      "title": "About NNsight",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation",
+      "section": "documentation",
+      "title": "API Reference",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/ndif",
+      "section": "documentation",
+      "title": "ndif",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/util",
+      "section": "documentation",
+      "title": "util",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/_c",
+      "section": "documentation",
+      "title": "_c",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/_c/backtrace",
+      "section": "documentation",
+      "title": "backtrace",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention",
+      "section": "documentation",
+      "title": "intervention",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/backward",
+      "section": "documentation",
+      "title": "backward",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/barrier",
+      "section": "documentation",
+      "title": "barrier",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/batching",
+      "section": "documentation",
+      "title": "batching",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/cache",
+      "section": "documentation",
+      "title": "cache",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/editing",
+      "section": "documentation",
+      "title": "editing",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/envoy",
+      "section": "documentation",
+      "title": "envoy",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/eproperty",
+      "section": "documentation",
+      "title": "eproperty",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/errors",
+      "section": "documentation",
+      "title": "errors",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/fragments",
+      "section": "documentation",
+      "title": "fragments",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/interleaver",
+      "section": "documentation",
+      "title": "interleaver",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/iterator",
+      "section": "documentation",
+      "title": "iterator",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/serialization",
+      "section": "documentation",
+      "title": "serialization",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/source",
+      "section": "documentation",
+      "title": "source",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/tracer",
+      "section": "documentation",
+      "title": "tracer",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/util",
+      "section": "documentation",
+      "title": "util",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/backends",
+      "section": "documentation",
+      "title": "backends",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/backends/display",
+      "section": "documentation",
+      "title": "display",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/backends/local",
+      "section": "documentation",
+      "title": "local",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/intervention/backends/remote",
+      "section": "documentation",
+      "title": "remote",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling",
+      "section": "documentation",
+      "title": "modeling",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/base",
+      "section": "documentation",
+      "title": "base",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/diffusion",
+      "section": "documentation",
+      "title": "diffusion",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/huggingface",
+      "section": "documentation",
+      "title": "huggingface",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/language",
+      "section": "documentation",
+      "title": "language",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/quantization",
+      "section": "documentation",
+      "title": "quantization",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/transformers",
+      "section": "documentation",
+      "title": "transformers",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vlm",
+      "section": "documentation",
+      "title": "vlm",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/mixins",
+      "section": "documentation",
+      "title": "mixins",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/mixins/loadable",
+      "section": "documentation",
+      "title": "loadable",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/mixins/meta",
+      "section": "documentation",
+      "title": "meta",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/mixins/remotable",
+      "section": "documentation",
+      "title": "remotable",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/tp",
+      "section": "documentation",
+      "title": "tp",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/tp/envoys",
+      "section": "documentation",
+      "title": "envoys",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/tp/fragments",
+      "section": "documentation",
+      "title": "fragments",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/tp/plan",
+      "section": "documentation",
+      "title": "plan",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm",
+      "section": "documentation",
+      "title": "vllm",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/async_backend",
+      "section": "documentation",
+      "title": "async_backend",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/batching",
+      "section": "documentation",
+      "title": "batching",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/collect",
+      "section": "documentation",
+      "title": "collect",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/envoys",
+      "section": "documentation",
+      "title": "envoys",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/fragments",
+      "section": "documentation",
+      "title": "fragments",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/interleaver",
+      "section": "documentation",
+      "title": "interleaver",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/registration",
+      "section": "documentation",
+      "title": "registration",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/tracer",
+      "section": "documentation",
+      "title": "tracer",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/vllm",
+      "section": "documentation",
+      "title": "vllm",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/engines",
+      "section": "documentation",
+      "title": "engines",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/engines/engine",
+      "section": "documentation",
+      "title": "engine",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/model_runners",
+      "section": "documentation",
+      "title": "model_runners",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/model_runners/GPUModelRunner",
+      "section": "documentation",
+      "title": "GPUModelRunner",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/serve",
+      "section": "documentation",
+      "title": "serve",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/serve/backend",
+      "section": "documentation",
+      "title": "backend",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/serve/cli",
+      "section": "documentation",
+      "title": "cli",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/serve/http",
+      "section": "documentation",
+      "title": "http",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/serve/server",
+      "section": "documentation",
+      "title": "server",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/workers",
+      "section": "documentation",
+      "title": "workers",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/modeling/vllm/workers/GPUWorker",
+      "section": "documentation",
+      "title": "GPUWorker",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/schema",
+      "section": "documentation",
+      "title": "schema",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/schema/config",
+      "section": "documentation",
+      "title": "config",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/schema/request",
+      "section": "documentation",
+      "title": "request",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/schema/response",
+      "section": "documentation",
+      "title": "response",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/tracing",
+      "section": "documentation",
+      "title": "tracing",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/tracing/backend",
+      "section": "documentation",
+      "title": "backend",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/tracing/globals",
+      "section": "documentation",
+      "title": "globals",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/tracing/hint",
+      "section": "documentation",
+      "title": "hint",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/tracing/tracer",
+      "section": "documentation",
+      "title": "tracer",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/documentation/tracing/util",
+      "section": "documentation",
+      "title": "util",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/features",
+      "section": "features",
+      "title": "Features",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/features/10_cache",
+      "section": "features",
+      "title": "Cache",
+      "description": "Caching activations from many modules at once with nnsight's tracer.cache."
+    },
+    {
+      "path": "/features/11_source",
+      "section": "features",
+      "title": "Accessing Intermediate Operations",
+      "description": "Reaching intermediate operations inside a module's forward with nnsight's .source."
+    },
+    {
+      "path": "/features/12_early_stopping",
+      "section": "features",
+      "title": "Early Stopping",
+      "description": "Stopping a forward pass early in nnsight once you have the values you need."
+    },
+    {
+      "path": "/features/13_skip",
+      "section": "features",
+      "title": "Skipping Modules",
+      "description": "Skipping a module's computation in nnsight and substituting your own value."
+    },
+    {
+      "path": "/features/14_scan",
+      "section": "features",
+      "title": "Scan",
+      "description": "Checking shapes without running the model, using nnsight's scan and fake tensors."
+    },
+    {
+      "path": "/features/15_remote_execution",
+      "section": "features",
+      "title": "Remote Execution on NDIF",
+      "description": "Running nnsight traces remotely on NDIF against models too large to host locally."
+    },
+    {
+      "path": "/features/16_vllm_support",
+      "section": "features",
+      "title": "vLLM",
+      "description": "Using nnsight with vLLM for high-throughput interpretability workloads."
+    },
+    {
+      "path": "/features/17_tensor_parallel",
+      "section": "features",
+      "title": "Tensor parallelism",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/features/18_quantization",
+      "section": "features",
+      "title": "Quantization",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/features/1_getting",
+      "section": "features",
+      "title": "Getting Activations",
+      "description": "Reading activations out of any module in a model with nnsight's trace API."
+    },
+    {
+      "path": "/features/2_setting",
+      "section": "features",
+      "title": "Setting Activations",
+      "description": "Editing activations mid-forward with nnsight: in-place writes, replacement, and where each applies."
+    },
+    {
+      "path": "/features/3_gradients",
+      "section": "features",
+      "title": "Gradients",
+      "description": "Backward passes in nnsight: reading and editing gradients inside an interleaved trace."
+    },
+    {
+      "path": "/features/4_multiple_token",
+      "section": "features",
+      "title": "Multiple token generation",
+      "description": "Intervening during multi-token generation with nnsight's tracer.iter."
+    },
+    {
+      "path": "/features/5_loading",
+      "section": "features",
+      "title": "Loading a Model",
+      "description": "Loading models in nnsight: TransformersModel, dispatch, device maps, and remote meta models."
+    },
+    {
+      "path": "/features/6_modules",
+      "section": "features",
+      "title": "Module Access",
+      "description": "Addressing modules in nnsight: envoy paths, per-architecture layouts, and calling modules ad hoc."
+    },
+    {
+      "path": "/features/7_model_editing",
+      "section": "features",
+      "title": "Model Editing",
+      "description": "Persistent model edits with nnsight's edit API, applied on every later run."
+    },
+    {
+      "path": "/features/8_batching",
+      "section": "features",
+      "title": "Batching",
+      "description": "Batching many prompts into one forward pass with nnsight's tracer.invoke."
+    },
+    {
+      "path": "/features/9_empty_invokers",
+      "section": "features",
+      "title": "Empty Invokers",
+      "description": "Empty invokes in nnsight: batch-wide operations without an extra input."
+    },
+    {
+      "path": "/getting-started",
+      "section": "getting-started",
+      "title": "Getting Started",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/getting-started/installation",
+      "section": "getting-started",
+      "title": "Installation",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/getting-started/quickstart",
+      "section": "getting-started",
+      "title": "Quick Start",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials",
+      "section": "tutorials",
+      "title": "Tutorials",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/mini-papers",
+      "section": "tutorials",
+      "title": "Mini Papers",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/mini-papers/belief-lookbacks",
+      "section": "tutorials",
+      "title": "Language Models Use Lookbacks to Track Beliefs",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/mini-papers/concept-attention",
+      "section": "tutorials",
+      "title": "Concept Attention",
+      "description": "ConceptAttention in nnsight: per-concept spatial heatmaps from a diffusion transformer's own attention, by splicing concept tokens into FLUX's encoder stream behind a one-way attention mask."
+    },
+    {
+      "path": "/tutorials/mini-papers/cot-faithfulness",
+      "section": "tutorials",
+      "title": "Measuring Faithfulness in Chain-of-Thought Reasoning",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/mini-papers/csordas_llm_depth",
+      "section": "tutorials",
+      "title": "Do Language Models Use Their Depth Efficiently?",
+      "description": "Measuring how much each layer of Llama-3.1-8B actually contributes, with nnsight: per-layer residual contributions, skip-a-layer effects on later computation, and integrated gradients over depth."
+    },
+    {
+      "path": "/tutorials/mini-papers/cyclic-arithmetic",
+      "section": "tutorials",
+      "title": "Base-10 Arithmetic Behind Cyclic Reasoning",
+      "description": "Llama-3.1-8B answers month and weekday arithmetic in base 10, not modular arithmetic. Fourier probes in nnsight find periods 2, 5 and 10 at layer 18 - and no period 7, even on a task built from a 7-cycle."
+    },
+    {
+      "path": "/tutorials/mini-papers/feucht_dual_route_induction",
+      "section": "tutorials",
+      "title": "The Dual-Route Model of Induction",
+      "description": "The dual-route model of induction in nnsight: separating token-level induction heads from concept-level ones in Llama-2-7B, and ablating each route to see what copying behaviour survives."
+    },
+    {
+      "path": "/tutorials/mini-papers/gaze-heads",
+      "section": "tutorials",
+      "title": "Gaze Heads",
+      "description": "Finding the attention heads a vision-language model looks through, with nnsight: score every head in one forward pass per query, then steer what the model describes with a per-head pre-softmax attention bias."
+    },
+    {
+      "path": "/tutorials/mini-papers/grokking-progress-measures",
+      "section": "tutorials",
+      "title": "Progress Measures for Grokking",
+      "description": "Grokking reproduced end to end in nnsight: train a one-layer transformer on modular addition, find the Fourier features it learns, and watch restricted and excluded loss reveal the circuit forming long before the test loss moves."
+    },
+    {
+      "path": "/tutorials/mini-papers/huang_demystifying_memorization",
+      "section": "tutorials",
+      "title": "Demystifying Verbatim Memorization in Large Language Models",
+      "description": "Probing verbatim memorization in nnsight: activation patching over memorized passages in Pythia and Llama to find where a recited continuation is actually decided."
+    },
+    {
+      "path": "/tutorials/mini-papers/induction-heads-phase-change",
+      "section": "tutorials",
+      "title": "Induction Heads and the In-Context Learning Phase Change",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/mini-papers/ioi-path-patching",
+      "section": "tutorials",
+      "title": "Path Patching the IOI Circuit",
+      "description": "Path patching the indirect object identification circuit in GPT-2 with nnsight: isolating single head-to-head edges, sweeping every upstream head into a name mover's query, and separating the q, k and v pathways."
+    },
+    {
+      "path": "/tutorials/mini-papers/jacobian-lens",
+      "section": "tutorials",
+      "title": "The Jacobian Lens",
+      "description": "Reproducing the Jacobian lens in nnsight: reading a language model's residual stream through its causal effect on the output, steering with lens vectors, and fitting a lens from scratch on gemma-2-2b and GPT-2."
+    },
+    {
+      "path": "/tutorials/mini-papers/marks_geometry_of_truth",
+      "section": "tutorials",
+      "title": "The Geometry of Truth",
+      "description": "The geometry of truth in nnsight: finding the linear direction that separates true from false statements in a language model's activations, and steering along it to flip the model's verdict."
+    },
+    {
+      "path": "/tutorials/mini-papers/massive-activations",
+      "section": "tutorials",
+      "title": "Massive Activations in Large Language Models",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/mini-papers/matryoshka-attribution",
+      "section": "tutorials",
+      "title": "Matryoshka Attribution",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/mini-papers/othello-world-models",
+      "section": "tutorials",
+      "title": "Emergent World Models in Othello-GPT",
+      "description": "Probing Othello-GPT's internal board with nnsight: a linear probe reads the board far better in mine/theirs coordinates than black/white, and editing along the probe's directions changes which moves the model plays."
+    },
+    {
+      "path": "/tutorials/mini-papers/patchscopes",
+      "section": "tutorials",
+      "title": "Patchscopes",
+      "description": "Patchscopes in nnsight: decoding a language model's hidden states by patching them into a different prompt and letting the model explain itself. Entity description and zero-shot feature extraction on gemma-2-2b."
+    },
+    {
+      "path": "/tutorials/mini-papers/todd_function_vectors",
+      "section": "tutorials",
+      "title": "Function Vectors",
+      "description": "Function vectors in nnsight: extracting the compact task representation that in-context learning builds inside a language model, and transplanting it to trigger the task without any examples."
+    },
+    {
+      "path": "/tutorials/mini-papers/under-trained-tokens",
+      "section": "tutorials",
+      "title": "Under-trained Tokens: Fishing for Magikarp in GPT-2",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/mini-papers/vlm-logit-lens",
+      "section": "tutorials",
+      "title": "The Logit Lens Over Image Tokens",
+      "description": "Applying the logit lens to a vision-language model's image patches with nnsight: LLaVA-1.5's 576 image tokens read as language, producing a crude segmentation map from a model never trained to segment."
+    },
+    {
+      "path": "/tutorials/tutorials",
+      "section": "tutorials",
+      "title": "Tutorials",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/tutorial_price_tagging_utils",
+      "section": "tutorials",
+      "title": "Tutorial price tagging utils",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/architectures/moe_routing",
+      "section": "tutorials",
+      "title": "Analysing Routing in a Mixture-of-Experts Model",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/architectures/state_space_models",
+      "section": "tutorials",
+      "title": "State-Space Models: Reading and Patching the Recurrent State",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/attention/attention_heads",
+      "section": "tutorials",
+      "title": "Attention Patterns and Per-Head Detection",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/causal_mediation_analysis/DAS",
+      "section": "tutorials",
+      "title": "Distributed Alignment Search (DAS): Searching for Linearly Encoded Concepts in Model Representations",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/causal_mediation_analysis/activation_patching",
+      "section": "tutorials",
+      "title": "Activation Patching",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/causal_mediation_analysis/attribution_patching",
+      "section": "tutorials",
+      "title": "Remote Attribution Patching",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/causal_mediation_analysis/causal_mediation_analysis_i",
+      "section": "tutorials",
+      "title": "Causal Mediation Analysis I: Introduction",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/causal_mediation_analysis/causal_mediation_analysis_ii",
+      "section": "tutorials",
+      "title": "Causal Mediation Analysis II: Explaining LLMs",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/causal_mediation_analysis/causal_models_intro",
+      "section": "tutorials",
+      "title": "What's a causal model?",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/circuits/attribution_graphs",
+      "section": "tutorials",
+      "title": "Attribution Graphs from Cross-Layer Transcoders",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/engineering/activation_caching",
+      "section": "tutorials",
+      "title": "Caching Activations Over a Dataset",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/get_started/chat_templates",
+      "section": "tutorials",
+      "title": "Chat Templates",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/get_started/start_remote_access",
+      "section": "tutorials",
+      "title": "Access LLMs with NDIF and NNsight",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/get_started/walkthrough",
+      "section": "tutorials",
+      "title": "NNsight Walkthrough",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/migrating/from_transformerlens",
+      "section": "tutorials",
+      "title": "Migrating from TransformerLens",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/probing/concept_erasure",
+      "section": "tutorials",
+      "title": "Concept Erasure",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/probing/diffusion_lens",
+      "section": "tutorials",
+      "title": "Diffusion Lens",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/probing/logit_lens",
+      "section": "tutorials",
+      "title": "Logit Lens",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/steering/LoRA_tutorial",
+      "section": "tutorials",
+      "title": "LoRA for Sentiment Analysis",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/steering/dict_learning",
+      "section": "tutorials",
+      "title": "Dictionary Learning",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/steering/evaluating_saes",
+      "section": "tutorials",
+      "title": "Evaluating a Sparse Autoencoder",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/tutorials/tutorials/vision/cross-attention-ablation",
+      "section": "tutorials",
+      "title": "Cross-Attention Ablation",
+      "description": "Ablating individual cross-attention layers in Stable Diffusion with nnsight: of the 16 layers that carry the prompt into the image, exactly one turns "
+    },
+    {
+      "path": "/vllm",
+      "section": "vllm",
+      "title": "nnsight on vLLM",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/ablation",
+      "section": "vllm",
+      "title": "Ablation",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/attention",
+      "section": "vllm",
+      "title": "Attention",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/attribution",
+      "section": "vllm",
+      "title": "Direct logit attribution",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/capabilities",
+      "section": "vllm",
+      "title": "Capabilities and limits",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/capture",
+      "section": "vllm",
+      "title": "Capture",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/chat",
+      "section": "vllm",
+      "title": "Chat and tokens",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/comparisons",
+      "section": "vllm",
+      "title": "Comparisons",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/conditional",
+      "section": "vllm",
+      "title": "Conditional interventions",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/editing",
+      "section": "vllm",
+      "title": "Editing the engine",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/generation",
+      "section": "vllm",
+      "title": "Generation",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/loading",
+      "section": "vllm",
+      "title": "Loading models",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/locations",
+      "section": "vllm",
+      "title": "Locations",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/logit-lens",
+      "section": "vllm",
+      "title": "Logit lens",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/patching",
+      "section": "vllm",
+      "title": "Activation patching",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/performance",
+      "section": "vllm",
+      "title": "Performance",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/sae",
+      "section": "vllm",
+      "title": "SAE features",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/serving",
+      "section": "vllm",
+      "title": "Async and servers",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/steering",
+      "section": "vllm",
+      "title": "Steering",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/tensor-parallel",
+      "section": "vllm",
+      "title": "Tensor parallelism",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/make_charts",
+      "section": "vllm",
+      "title": "Make charts",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-deepseek-v2-lite",
+      "section": "vllm",
+      "title": "Throughput deepseek v2 lite",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-1b",
+      "section": "vllm",
+      "title": "Throughput llama 1b",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-70b-tp8",
+      "section": "vllm",
+      "title": "Throughput llama 70b tp8",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-70b",
+      "section": "vllm",
+      "title": "Throughput llama 70b",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-8b-long",
+      "section": "vllm",
+      "title": "Throughput llama 8b long",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-8b-tp2",
+      "section": "vllm",
+      "title": "Throughput llama 8b tp2",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-8b-tp4",
+      "section": "vllm",
+      "title": "Throughput llama 8b tp4",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-8b-tp8",
+      "section": "vllm",
+      "title": "Throughput llama 8b tp8",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-8b-x32",
+      "section": "vllm",
+      "title": "Throughput llama 8b x32",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-llama-8b",
+      "section": "vllm",
+      "title": "Throughput llama 8b",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-qwen-moe",
+      "section": "vllm",
+      "title": "Throughput qwen moe",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-qwen3-8b",
+      "section": "vllm",
+      "title": "Throughput qwen3 8b",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-qwen35-08b",
+      "section": "vllm",
+      "title": "Throughput qwen35 08b",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-qwen35-4b",
+      "section": "vllm",
+      "title": "Throughput qwen35 4b",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/assets/throughput-qwen36-moe",
+      "section": "vllm",
+      "title": "Throughput qwen36 moe",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/examples/causal-tracing",
+      "section": "vllm",
+      "title": "Causal tracing",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/examples/emotion-tracker",
+      "section": "vllm",
+      "title": "Concept directions during generation",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/examples/jacobian-lens",
+      "section": "vllm",
+      "title": "Jacobian lens",
+      "description": "Documentation for the nnsight Python library"
+    },
+    {
+      "path": "/vllm/examples/probe",
+      "section": "vllm",
+      "title": "A linear probe",
+      "description": "Documentation for the nnsight Python library"
+    }
+  ]
+}
